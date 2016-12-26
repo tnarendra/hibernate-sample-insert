@@ -1,0 +1,19 @@
+
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+
+    repositories {
+       mavenCentral()
+    }
+
+    dependencies {
+    	compile 'mysql:mysql-connector-java:5.1.40'
+		compile 'org.hibernate:hibernate-core:5.2.0.Final'
+        testCompile 'junit:junit:4.8.2'
+    }
+
+    version = '1.0'
+
+    jar {
+        manifest.attributes provider: ' '
+    }
